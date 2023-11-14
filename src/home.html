@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/home.css"/>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/home.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victoria's Portfolio</title>
   </head>
   <body>
-    <nav>
-      <input type="checkbox" class="toggle-menu">
-      <div class="hamburguer"></div>
-      <ul>
-        <li><a>About me</a></li>
-        <li><a>Gallery</a></li>
-        <li><a>Comissions</a></li>
-        <li><a>T.O.S</a></li>
-        <li>EN</li>
-      </ul>
-    </nav>
+    <div id="navbar-container" include-html="navbar.html"></div>
     <main>
       <section class="titleSection">
         <h1>Welcome to my website!</h1>
         <h5>Make yourself at home</h5>
         <div class="icons">
-        <figure class="iconsTelegram">
-          <a href="https://t.me/AzusArtDen"><img class="telegram" src="assets/icons/telegram.svg" alt="telegram logo"/></a>
-        </figure>
-        <figure class="iconsBluesky">
-          <a href="https://bsky.app/profile/azumydori.bsky.social"><img class="bluesky" src="assets/icons/bluesky.svg" alt="bluesky icon representation"/></a>
-        </figure>
-        <figure class="iconsTwitter">
-          <a href="https://x.com/VickyLaChacha?t=lnaYfBMaSlbFTBX1v9wraA&s=09"><img class="twitter" src="assets/icons/twitter.svg" alt="twitter logo"/></a>
-        </figure>
-      </div>
-      <span class="comissions"> Comission status: <span class="status">CLOSED</span></span>
+          <figure class="iconsTelegram">
+            <a href="https://t.me/AzusArtDen"
+              ><img
+                class="telegram"
+                src="assets/icons/telegram.svg"
+                alt="telegram logo"
+            /></a>
+          </figure>
+          <figure class="iconsBluesky">
+            <a href="https://bsky.app/profile/azumydori.bsky.social"
+              ><img
+                class="bluesky"
+                src="assets/icons/bluesky.svg"
+                alt="bluesky icon representation"
+            /></a>
+          </figure>
+          <figure class="iconsTwitter">
+            <a href="https://x.com/VickyLaChacha?t=lnaYfBMaSlbFTBX1v9wraA&s=09"
+              ><img
+                class="twitter"
+                src="assets/icons/twitter.svg"
+                alt="twitter logo"
+            /></a>
+          </figure>
+        </div>
+        <span class="comissions">
+          Comission status: <span class="status">CLOSED</span></span
+        >
       </section>
       <figure class="homeFigure">
-        <img class="homeImg" src="assets/img/home.jpg"/>
+        <img class="homeImg" src="assets/img/home.jpg" />
       </figure>
     </main>
     <footer>
-      Victoria L. 2023.
+      <span class="credits">Victoria L. 2023.</span>
     </footer>
+    <script src="func/redirection.js"></script>
   </body>
 </html>
