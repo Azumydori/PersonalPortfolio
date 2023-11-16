@@ -55,7 +55,6 @@
       &:hover {
         background-color:#435585;
         transition: ease-in-out 0.3s;
-        width: 100px;
       }
     }
   }
@@ -152,6 +151,10 @@
   
     ul li {
       width: 100%;
+    }
+
+    li a:hover {
+      width:100px;
     }
   }
   

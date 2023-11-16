@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #435585;
+}
+body main {
+  margin: 60px 24px;
+}
+body main section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMeImg {
+  min-width: 300px;
+}
+
+h1, p {
+  color: #f5e8c7;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+footer {
+  display: table;
+  height: 0;
+  width: 100%;
+  background-color: #363062;
+  padding: 4px;
+}
+footer .credits {
+  display: block;
+  color: #f5e8c7;
+  text-align: end;
+}
+
+@media screen and (max-width: 880px) {
+  body main section {
+    flex-direction: column;
+  }
+  body main .aboutMeImg {
+    max-width: 200px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
