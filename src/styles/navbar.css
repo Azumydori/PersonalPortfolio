@@ -38,7 +38,7 @@ header nav {
   width: 100%;
 }
 
-ul {
+.navbarOptions {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,7 @@ ul {
   z-index: 1;
   transition: 0.5s;
 }
-ul li a {
+.navbarOptions li a {
   text-decoration: none;
   color: #f5e8c7;
   display: block;
@@ -55,10 +55,9 @@ ul li a {
   text-align: center;
   cursor: pointer;
 }
-ul li a:hover {
+.navbarOptions li a:hover {
   background-color: #435585;
   transition: ease-in-out 0.3s;
-  width: 100px;
 }
 
 .hamburguer {
@@ -134,7 +133,7 @@ nav input:checked ~ ul {
     padding-top: 6px;
     padding-bottom: 6px;
   }
-  ul {
+  .portfolioNav .navbarOptions {
     justify-content: start;
     flex-direction: column;
     align-items: center;
@@ -147,8 +146,11 @@ nav input:checked ~ ul {
     padding-top: 80px;
     margin: 0;
   }
-  ul li {
+  .navbarOptions li {
     width: 100%;
+  }
+  li a:hover {
+    width: 100px;
   }
 }
 

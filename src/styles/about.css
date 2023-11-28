@@ -11,10 +11,13 @@ body {
 body main {
   margin: 60px 24px;
 }
-body main section {
+body main .aboutMeSection {
   display: flex;
   align-items: center;
   gap: 30px;
+  background-color: #363062;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 aside {
@@ -48,12 +51,30 @@ footer .credits {
   text-align: end;
 }
 
+.interests {
+  color: #f5e8c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.interests .interestList {
+  list-style: none;
+  padding: 0;
+}
+.interests .interestList .listAbout {
+  padding: 14px 0;
+}
+
 @media screen and (max-width: 880px) {
   body main section {
     flex-direction: column;
   }
   body main .aboutMeImg {
     max-width: 200px;
+  }
+  body main .interestList {
+    display: flex;
+    flex-direction: column;
   }
 }
 
